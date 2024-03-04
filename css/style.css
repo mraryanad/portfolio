@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Nunito";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav-item {
+  margin: auto 20px;
+  list-style: none;
+  color: orangered;
+}
+
+.nav-anchor {
+  text-decoration: none;
+  color: orangered;
+}
+
+.nav-anchor:hover {
+  color: coral;
+}
