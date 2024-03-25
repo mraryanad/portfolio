@@ -53,7 +53,7 @@ nav ul {
 }
 .hero-left {
   font-family: "Nunito";
-  max-width: 25%;
+  width: 25%;
 }
 .hero-name {
   text-transform: uppercase;
@@ -96,12 +96,14 @@ nav ul {
   width: 70%;
   display: flex;
   justify-content: space-evenly;
+  gap: 20px;
 }
 .services-card {
   border: 2px solid lightgray;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: 11px;
   padding: 10px 20px;
-  width: 30%;
+  width: 100%;
 }
 
 .services-card-heading {
@@ -143,13 +145,10 @@ nav ul {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .content-section {
   width: 35%;
-  display: flex;
-  flex-direction: column;
   margin: 40px;
 }
 
@@ -166,32 +165,55 @@ nav ul {
   color: gray;
 }
 
-.social-media-logo-and-link-temp-class h2 {
-  margin: 20px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  border: 8px solid rosybrown;
-  border-radius: 25px;
-  font-size: 32px;
-  color: sienna;
-  font-family: "nova";
-  letter-spacing: 4px;
-}
-
-form {
+.form {
+  margin: 40px;
   width: 25%;
-  align-items: center;
+  border-radius: 9px;
+  border: 1px solid lightgray;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  background: whitesmoke;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  margin: 40px;
+  align-items: center;
 }
 
-form button {
+.form-div {
+  width: 100%;
+}
+
+.form-div .child {
+  margin-bottom: 10px;
+}
+
+.form-div .child-two-col {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-div .child-two-col div {
+  width: 100%;
+}
+
+.form-div .form-input,
+.form-div .form-textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-div .form-textarea {
+  resize: vertical;
+}
+
+.form .form-button {
   padding: 8px 15px;
   margin-top: 15px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid #008000;
   background: #008000;
   color: white;
@@ -199,37 +221,111 @@ form button {
   font-size: 14px;
   text-transform: uppercase;
 }
-
-form button:hover {
+.form .form-button:hover {
   background: rgb(14, 151, 14);
   cursor: pointer;
 }
 
-.form-grid {
+/* Footer */
+.footer {
+  border-top: #999 solid 1px;
   width: 100%;
-  border-radius: 9px;
-  border: 1px solid lightgray;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  background: whitesmoke;
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 20px;
+  height: 40vh;
 }
 
-.form-grid label {
-  display: block;
-  margin-bottom: 5px;
+.footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: inherit;
+  width: inherit;
+  /* margin: 30px 10px 0 10px; */
 }
 
-.form-grid input,
-.form-grid textarea {
+.footer .footer-container .divider {
+  border-left: 6px solid tomato;
+  border-radius: 3px;
+  height: 200px;
+  position: absolute;
+  right: 34%;
+  /* margin-left: -3px; */
+}
+
+.footer .footer-container .left {
+  width: 40%;
+}
+
+.footer-container .left h1 {
+  color: #ff4500;
+  padding: 10px;
+  margin: 20px;
+  font-size: 4.2rem;
+  font-family: "tr larabiefont";
+}
+
+.left-align {
+  display: flex;
+  align-items: center;
+}
+
+.divider-small {
+  border-left: 4px solid tomato;
+  border-radius: 3px;
+  height: 55px;
+  margin-left: -10px;
+  position: absolute;
+  left: 10%;
+}
+
+.footer-container .left p {
+  font-family: monospace;
+  font-size: 14px;
+  color: #333;
+  margin: 0px 30px;
+}
+
+.footer .footer-container .right {
+  display: flex;
+  flex-flow: column;
+  height: 25vh;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.right a {
+  text-decoration: none;
+  color: #222;
+}
+
+.right a:hover {
+  color: #777;
+  transform: scale(1.001);
+}
+
+.footer-container .right .contactInfo {
+  background: yellow;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 25vh;
   width: 100%;
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
 }
 
-.form-grid textarea {
-  resize: vertical;
+.right .contactInfo i {
+  color: #ff6a00;
+}
+
+.align {
+  color: #ff6a00;
+}
+
+.footer .bottom {
+  width: 100%;
+  height: 7vh;
+  margin: 0 10px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

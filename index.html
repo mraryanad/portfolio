@@ -115,63 +115,142 @@
             magni quia et provident molestiae officiis, reiciendis debitis ad
             ullam dolores voluptatum eaque, voluptate neque necessitatibus!
           </p>
-
-          <div class="social-media-logo-and-link-temp-class">
-            <h2>logo and link for Social Media</h2>
-          </div>
         </div>
 
-        <form action="" method="post">
-          <div class="form-grid">
-            <div>
-              <label for="first_name">Enter First Name:</label>
+        <form action="" method="post" class="form">
+          <div class="form-div">
+            <div class="child-two-col">
+              <div>
+                <label for="firstName" class="form-label"
+                  >Enter First Name:</label
+                >
+                <input
+                  class="form-input"
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Hari"
+                />
+              </div>
+
+              <div>
+                <label for="lastName" class="form-label"
+                  >Enter Last Name:</label
+                >
+                <input
+                  class="form-input"
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Bahadur"
+                />
+              </div>
+            </div>
+
+            <div class="child-two-col">
+              <div>
+                <label for="email" class="form-label">Enter Your Email:</label>
+                <input
+                  class="form-input"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="hello@example.com"
+                />
+              </div>
+              <div>
+                <label for="phoneNumber" class="form-label"
+                  >Enter Your Number:</label
+                >
+                <input
+                  type="number"
+                  class="form-input"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  placeholder="9800000000"
+                />
+              </div>
+            </div>
+
+            <div class="child">
+              <label for="subject" class="form-label"
+                >Enter Your Subject:</label
+              >
               <input
                 type="text"
-                id="first_name"
-                name="first_name"
-                placeholder="Enter First Name"
+                class="form-input"
+                id="subject"
+                name="subject"
+                placeholder="Graphics Designing Enquiry"
               />
             </div>
-
-            <div>
-              <label for="last_name">Enter Last Name:</label>
-              <input
-                type="text"
-                id="last_name"
-                name="last_name"
-                placeholder="Enter Last Name"
-              />
-            </div>
-
-            <div>
-              <label for="email">Enter Email:</label>
-              <input
-                id="email"
-                type="email"
-                name="email"
-                placeholder="hello@example.com"
-              />
-            </div>
-
-            <div>
-              <label for="message">Enter Your Message:</label>
+            <div class="child">
+              <label for="message" class="form-label"
+                >Enter Your Message:</label
+              >
               <textarea
+                class="form-textarea"
                 rows="4"
                 id="message"
                 name="message"
-                placeholder="Your Message Here"
               >
               </textarea>
             </div>
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" class="form-button">Submit</button>
         </form>
       </div>
 
       <!-- contact forms -->
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="divider"></div>
+          <div class="left">
+              <h1>Aryan's Portfolio</h1>
+              <div class="left-align">
+                <div class="divider-small"></div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam deserunt fugiat repellat voluptate sequi architecto voluptates maiores at recusandae illo quos eaque doloribus, deleniti non minus voluptatibus neque impedit eum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quae cum recusandae esse
+                </p>
+              </div>
+              </div>
+              <div class="right">
+                <div class="contactInfo">
+                  <p>
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="align">&nbsp;Website:&nbsp;</div><a href="https://mraryanad.github.io/portfolio"
+                      target="_blank">aryanad.github.io/portfolio</a>
+                  </p>
+              </div>
+              <div class="contactInfo">
+                  <p>
+                      <i class="fa-solid fa-envelope"></i>
+                  <div class="align">&nbsp;Email:&nbsp;</div><a
+                      href="mailto:aryanhohai@gmail.com?subject=Portfolio Website"
+                      target="_blank">aryanhohai@gmail.com</a>
+                  </p>
+              </div>
+              <div class="contactInfo">
+                  <p>
+                      <i class="fa-solid fa-phone"></i>
+                  <div class="align">&nbsp;Phone no:&nbsp;</div><a href="tel:9814273753">+977 9814273753</a>
+                  </p>
+              </div>
+              <div class="contactInfo">
+                  <p>
+                      <i class="fa-brands fa-github"></i>
+                  <div class="align">&nbsp;Github:&nbsp;</div><a href="https://www.github.com/AryanAD"
+                      target="_blank">github.com/AryanAD</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="bottom">
+          <p>Copyright &copy; 2023 | Aryan Adhikari</p>
+      </div>
+  </footer>
 
     <script src="../js/script.js"></script>
   </body>

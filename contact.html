@@ -39,25 +39,78 @@
     </header>
     <main style="margin-top: 100px">
       <!-- contact form  -->
-      <form action="" method="post">
-        <div>
-          <label for="first_name">First Name</label>
-          <input
-            type="text"
-            id="first_name"
-            name="first_name"
-            placeholder="JOHN"
-          />
-
-          <label for="surname">Surname</label>
-          <input type="text" id="surname" placeholder="DEO" />
-
-          <label for="DOB">Date of Birth</label>
-          <input type="date" name="" id="" />
+      <div class="contact-section">
+        <div class="content">
+          <h4>For more details</h4>
+          <ul>
+            <li>Email: info@aryan.com.np</li>
+            <li>Phone: +977 98456123789</li>
+          </ul>
         </div>
-      </form>
+        <div class="form-section">
+          <form action="">
+            <div class="form-group name">
+              <div class="first-name">
+                <label for="first_name">First Name</label>
+                <input type="text" />
+              </div>
+              <div class="last-name">
+                <label for="last_name">Last Name</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone_number">Phone Number</label>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
       <!-- contact forms -->
     </main>
+
+    <style>
+      .contact-section {
+        display: flex;
+        align-items: start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+
+      .form-group {
+        margin-bottom: 10px;
+      }
+
+      .form-group textarea {
+        width: 100%;
+      }
+
+      .form-group label {
+        display: block;
+      }
+
+      .form-group input {
+        width: 100%;
+      }
+
+      .name {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+    </style>
 
     <footer></footer>
 
