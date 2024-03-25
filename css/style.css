@@ -301,11 +301,9 @@ nav ul {
 
 .right a:hover {
   color: #777;
-  transform: scale(1.001);
 }
 
 .footer-container .right .contactInfo {
-  background: yellow;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -314,11 +312,11 @@ nav ul {
 }
 
 .right .contactInfo i {
-  color: #ff6a00;
+  color: #ff4500;
 }
 
 .align {
-  color: #ff6a00;
+  color: #ff4500;
 }
 
 .footer .bottom {
